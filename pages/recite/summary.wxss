@@ -1,0 +1,31 @@
+.weui-article__h1 {
+  font-size: 1.5em;
+}
+
+.weui-article__p {
+  font-size: 1.2em;
+}
+
+.weui-article + .weui-article {
+  border-top: solid 1px #e8e8e8;
+}
+
+.weui-article:last-child {
+  margin: 100rpx;
+}
+
+.page__ft {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  
+  color: #25A982;
+  font-size: 1.5em;
+  font-weight: bold;
+
+  background-color: #e8e8e8; 
+}
+
+.page__ft view {
+  padding: 15rpx;
+}

@@ -35,5 +35,21 @@ Page({
   },
   bindStatTap: function () {
     wx.navigateTo({url: 'stat'})
+  },
+  bindReciteTab: function () {
+    wx.navigateTo({url: 'recite/start'})
+  },
+  bindOrderTab: function () {
+    wx.showModal({
+      title: '尚未解锁该课程',
+      content: '您还未解锁该课程，请前往支付购买',
+      showCancel: true,
+      confirmText: '购买',
+      success: function(res) {
+        if (res.confirm) {
+          wx.navigateTo({url: 'order'})
+        }
+      }
+    })
   }
 })

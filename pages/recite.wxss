@@ -1,9 +1,43 @@
+.page {
+  width: 100%;
+  height: 1815rpx;
+
+  overflow-x: hidden;
+}
+
+.page > image {
+  position: absolute;
+  z-index: -1;
+
+  width: 100%;
+  height: 1815rpx;
+}
+
 .action-bar {
-  padding: 0 10rpx;
+  padding: 10rpx;
+  height: 61rpx;
+  width: 100%;
 }
 
 .action-bar image {
   width: 61rpx;
   height: 61rpx;
-  margin: 0 10rpx;
+  margin: 10rpx;
+}
+
+.small {
+  margin-top: 240rpx;
+
+  width: 100%;
+  height: 200rpx;
+}
+
+.large {
+  width: 100%;
+  height: 185rpx;
+}
+
+.speed {
+  width: 100%;
+  height: 180rpx;
 }

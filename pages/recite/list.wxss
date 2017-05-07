@@ -1,0 +1,12 @@
+swiper {
+  height: 100%;
+}
+
+.weui-article__h1 {
+  font-size: 2em;
+  text-align: center;
+}
+
+.weui-article__p {
+  font-size: 1.2em;
+}

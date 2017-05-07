@@ -3,6 +3,25 @@ page {
 }
 
 image {
+  position: absolute;
+  z-index: -1;
+
   width: 750rpx;
   height: 2700rpx;
+}
+
+.entrance {
+  margin-top: 350rpx;
+  margin-left: 20rpx;
+  width: 160rpx;
+  height: 180rpx;
+}
+
+.video {
+  height: 100%;
+  background-color: #f8f8f8;
+}
+
+video {
+  width: 100%;
 }

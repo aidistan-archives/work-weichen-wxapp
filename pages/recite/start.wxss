@@ -1,0 +1,34 @@
+page {
+ background-color: #e8e8e8;
+}
+
+.weui-navbar {
+  background-color: #f8f8f8;
+}
+
+.weui-navbar__item {
+  padding: 10rpx 0;
+}
+
+.weui-navbar__item.active {
+  color: #25A982;
+  border-bottom: solid 5rpx #25A982;
+}
+
+image {
+  width: 750rpx;
+  height: 920rpx;
+}
+
+.page_ft {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10rpx;
+  
+  color: #ffffff;
+  background-color: #25A982;
+  
+  font-size: 1.75em;
+  text-align: center;
+}

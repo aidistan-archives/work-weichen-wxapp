@@ -14,10 +14,10 @@
     <view class="weui-tab__panel">
       <view class="weui-tab__content" hidden="{{activeTab != 'unit'}}">
         <view class="weui-cells" style="margin-top: 0">
-          <block wx:for="{{words.unit}}" wx:for-index="unit" wx:key="index">
-          <block wx:for="{{item}}" wx:for-index="list" wx:key="index">
+          <block wx:for="{{words.unit}}" wx:for-index="list" wx:key="index">
+          <block wx:for="{{item}}" wx:for-index="unit" wx:key="index">
             <view class="weui-cell weui-cell__head">
-              <view class="weui-cell__bd">Unit {{unit}} List {{list}}</view>
+              <view class="weui-cell__bd">List {{list}} Unit {{unit}}</view>
             </view>
             <view class="weui-cell" wx:for="{{item}}" wx:key="index" data-word="{{index}}" bindtap="bindWordTap">
               <view class="weui-cell__bd">{{index}}</view>

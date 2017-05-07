@@ -7,7 +7,12 @@
     "pages/account",
     "pages/stat",
 
-    "pages/word"
+    "pages/word",
+    "pages/order",
+
+    "pages/recite/start",
+    "pages/recite/list",
+    "pages/recite/summary"
   ],
   "window":{
     "backgroundTextStyle":"light",

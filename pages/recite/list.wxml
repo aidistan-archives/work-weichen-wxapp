@@ -1,0 +1,14 @@
+<view class="page">
+  <progress percent="{{percentage}}"/>
+  <swiper bindchange="bindSwiperChange">
+    <swiper-item wx:for="{{words}}" wx:key="index">
+      <view class="weui-article">
+        <view class="weui-article__h1">{{index}}</view>
+        <view class="weui-article__p" wx:for="{{item}}" wx:key="index">
+          {{index+1}}. {{item}}
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item></swiper-item>
+  </swiper>
+</view>

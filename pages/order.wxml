@@ -1,0 +1,29 @@
+<view class="page">
+    <view style="text-align: center; font-size: 2em; margin: 20rpx 0">购买课程</view>
+    <view class="weui-form-preview">
+        <view class="weui-form-preview__hd">
+            <view class="weui-form-preview__item">
+                <view class="weui-form-preview__label">付款金额</view>
+                <view class="weui-form-preview__value_in-hd">¥400.00</view>
+            </view>
+        </view>
+        <view class="weui-form-preview__bd">
+            <view class="weui-form-preview__item">
+                <view class="weui-form-preview__label">商品</view>
+                <view class="weui-form-preview__value">微臣课程</view>
+            </view>
+            <view class="weui-form-preview__item">
+                <view class="weui-form-preview__label">课程时长</view>
+                <view class="weui-form-preview__value">30 节</view>
+            </view>
+            <view class="weui-form-preview__item">
+                <view class="weui-form-preview__label">课程书籍</view>
+                <view class="weui-form-preview__value">再要你命3000</view>
+            </view>
+        </view>
+        <view class="weui-form-preview__ft">
+            <view class="weui-form-preview__btn weui-form-preview__btn_default" hover-class="weui-form-preview__btn_active">取消</view>
+            <view class="weui-form-preview__btn weui-form-preview__btn_primary" hover-class="weui-form-preview__btn_active">支付</view>
+        </view>
+    </view>
+</view>

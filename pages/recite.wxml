@@ -1,11 +1,12 @@
 <view class="page">
-  <view class="action-bar weui-flex">
-    <view class="weui-flex__item">
-      <image src="../assets/icon-account-primary.png" bindtap="bindAccountTap"></image>
-      <image src="../assets/icon-refresh-primary.png" animation="{{refresh.animation}}" bindtap="bindRefreshTap"></image>
-    </view>
-    <view class="weui-flex__item" style="text-align: right">
-      <image src="../assets/icon-stat-primary.png" bindtap="bindStatTap"></image>
-    </view>
+  <image src="../assets/recite.jpg"></image>
+  <view class="action-bar">
+    <image src="../assets/icon-account-primary.png" bindtap="bindAccountTap"></image>
+    <image src="../assets/icon-refresh-primary.png" animation="{{refresh.animation}}" bindtap="bindRefreshTap"></image>
+    <image src="../assets/icon-stat-primary.png" style="position: absolute; right: 10rpx" bindtap="bindStatTap"></image>
   </view>
+
+  <view class="small" bindtap="bindReciteTab"></view>
+  <view class="large" bindtap="bindOrderTab"></view>
+  <view class="speed" bindtap="bindOrderTab"></view>
 </view>

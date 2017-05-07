@@ -1,0 +1,15 @@
+<view class="page">
+  <view wx:for="{{words}}" class="weui-article">
+    <view class="weui-article__h1">{{index}}</view>
+    <view class="weui-article__p" wx:for="{{item}}" wx:key="index">
+      {{index+1}}. {{item}}
+    </view>
+  </view>
+
+  <view style="height: 90rpx;">placeholder</view>
+
+  <view class="page__ft weui-flex">
+    <view class="weui-flex__item" bindtap="bindReciteTap">再背一次</view>
+    <view class="weui-flex__item" style="text-align: right">巩固练习</view>
+  </view>
+</view>
