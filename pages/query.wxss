@@ -1,1 +1,18 @@
-/* pages/query.wxss */
+.weui-navbar {
+  background-color: #f8f8f8;
+}
+
+.weui-navbar__item {
+  padding: 10rpx 0;
+}
+
+.weui-navbar__item.active {
+  color: #25A982;
+  border-bottom: solid 5rpx #25A982;
+}
+
+.weui-cell__head {
+  color: #ffffff;
+  text-align: center;
+  background-color: #25A982;
+}

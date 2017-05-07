@@ -1,19 +1,18 @@
-// pages/query.js
 Page({
-  data:{},
-  onLoad:function(options){
-    // 页面初始化 options为页面跳转所带来的参数
+  data: {
+    tabs: ['单元排序', '字母排序'],
+    activeTab: 'unit',
+    words: {
+      unit: require('../utils/dict_unit.js'),
+      alphabet: require('../utils/dict_alphabet.js')
+    }
   },
-  onReady:function(){
-    // 页面渲染完成
+  bindTabClick: function (e) {
+    this.setData({
+      activeTab: e.currentTarget.id
+    });
   },
-  onShow:function(){
-    // 页面显示
-  },
-  onHide:function(){
-    // 页面隐藏
-  },
-  onUnload:function(){
-    // 页面关闭
+  bindWordTap: function (e) {
+    wx.navigateTo({url: 'word?word=' + e.currentTarget.dataset.word})
   }
-})
+});

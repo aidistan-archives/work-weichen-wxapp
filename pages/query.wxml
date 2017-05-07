@@ -1,2 +1,43 @@
-<!--pages/query.wxml-->
-<text>pages/query.wxml</text>
+<view class="page">
+  <view class="weui-tab">
+    <view class="weui-navbar weui-flex">
+      <view class="weui-flex__item weui-navbar__item"></view>
+      <view class="weui-flex__item weui-navbar__item {{activeTab == 'unit' ? 'active' : ''}}" id="unit" bindtap="bindTabClick">
+        <view class="weui-navbar__title">单元排序</view>
+      </view>
+      <view class="weui-flex__item weui-navbar__item {{activeTab == 'alphabet' ? 'active' : ''}}" id="alphabet" bindtap="bindTabClick">
+        <view class="weui-navbar__title">字母排序</view>
+      </view>
+      <view class="weui-flex__item weui-navbar__item"></view>
+    </view>
+
+    <view class="weui-tab__panel">
+      <view class="weui-tab__content" hidden="{{activeTab != 'unit'}}">
+        <view class="weui-cells" style="margin-top: 0">
+          <block wx:for="{{words.unit}}" wx:for-index="unit" wx:key="index">
+          <block wx:for="{{item}}" wx:for-index="list" wx:key="index">
+            <view class="weui-cell weui-cell__head">
+              <view class="weui-cell__bd">Unit {{unit}} List {{list}}</view>
+            </view>
+            <view class="weui-cell" wx:for="{{item}}" wx:key="index" data-word="{{index}}" bindtap="bindWordTap">
+              <view class="weui-cell__bd">{{index}}</view>
+            </view>
+          </block>
+          </block>
+        </view>
+      </view>
+      <view class="weui-tab__content" hidden="{{activeTab != 'alphabet'}}">
+        <view class="weui-cells" style="margin-top: 0">
+          <block wx:for="{{words.alphabet}}" wx:for-index="char" wx:key="index">
+            <view class="weui-cell weui-cell__head">
+              <view class="weui-cell__bd">{{char}}</view>
+            </view>
+            <view class="weui-cell" wx:for="{{item}}" wx:key="index" data-word="{{index}}" bindtap="bindWordTap">
+              <view class="weui-cell__bd">{{index}}</view>
+            </view>
+          </block>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -5,7 +5,9 @@
     "pages/course",
 
     "pages/account",
-    "pages/stat"
+    "pages/stat",
+
+    "pages/word"
   ],
   "window":{
     "backgroundTextStyle":"light",

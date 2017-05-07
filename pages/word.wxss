@@ -1,0 +1,22 @@
+.weui-article__h1 {
+  font-size: 2em;
+  text-align: center;
+}
+
+.weui-article__p {
+  font-size: 1.2em;
+}
+
+.page__ft {
+  position: fixed;
+  bottom: 0;
+
+  width: 100%;
+}
+
+.page__ft button {
+  margin: 10rpx;
+
+  color: #25A982;
+  font-size: 1.5em;
+}

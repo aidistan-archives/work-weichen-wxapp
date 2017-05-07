@@ -1,0 +1,14 @@
+<view class="page">
+  <view class="weui-article">
+    <view class="weui-article__h1">{{word}}</view>
+    <view class="weui-article__p" wx:for="{{lines}}" wx:key="index">
+      {{index+1}}. {{item}}
+    </view>
+  </view>
+  <view class="page__ft weui-flex">
+    <view class="weui-flex__item" bindtap="bindPreviousTap"><button>上一词</button></view>
+    <view class="weui-flex__item"></view>
+    <view class="weui-flex__item"></view>
+    <view class="weui-flex__item" bindtap="bindNextTap"><button>下一词</button></view>
+  </view>
+</view>
