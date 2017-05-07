@@ -1,0 +1,7 @@
+image {
+  border-radius: 50%;
+}
+
+picker {
+  text-align: right;
+}

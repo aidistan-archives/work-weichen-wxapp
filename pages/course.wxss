@@ -1,0 +1,8 @@
+page {
+  height: 2700rpx;
+}
+
+image {
+  width: 750rpx;
+  height: 2700rpx;
+}

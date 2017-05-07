@@ -1,0 +1,79 @@
+<view class="page">
+  <view class="weui-cells">
+    <view class="weui-cell weui-cell_access">
+      <view class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+        <image src="{{userInfo.avatarUrl}}" style="width: 60px; height: 60px; display: block"/>
+      </view>
+      <view class="weui-cell__bd">{{userInfo.nickName}}</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </view>
+    <view class="weui-cell weui-cell_access">
+      <view class="weui-cell__bd">我的课程</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </view>
+  </view>
+
+  <view class="weui-cells">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">设置考试时间</view>
+      </view>
+      <view class="weui-cell__bd">
+        <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+          <view class="weui-input">{{date}}</view>
+        </picker>
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_switch">
+      <view class="weui-cell__bd">每日背词提醒</view>
+      <view class="weui-cell__ft">
+        <switch />
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_switch">
+      <view class="weui-cell__bd">每日复习提醒</view>
+      <view class="weui-cell__ft">
+        <switch />
+      </view>
+    </view>
+  </view>
+
+  <view class="weui-cells">
+    <view class="weui-cell weui-cell_access">
+      <view class="weui-cell__bd">离线词库</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access">已下载</view>
+    </view>
+    <view class="weui-cell weui-cell_switch">
+      <view class="weui-cell__bd">关灯</view>
+      <view class="weui-cell__ft">
+        <switch />
+      </view>
+    </view>
+  </view>
+
+  <view class="weui-cells">
+    <view class="weui-cell weui-cell_access">
+      <view class="weui-cell__bd">意见反馈</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </view>
+    <view class="weui-cell weui-cell_access">
+      <view class="weui-cell__bd">发表评分</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </view>
+  </view>
+
+  <view class="weui-cells">
+    <view class="weui-cell weui-cell_access">
+      <view class="weui-cell__bd">免责声明</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </view>
+    <view class="weui-cell weui-cell_access">
+      <view class="weui-cell__bd">关于微臣</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </view>
+  </view>
+
+  <view style="padding: 20rpx; color: #888888;">
+    GRE® is a registered trademark of Educational Testing Service (ETS). This app is not endorsed or approved by ETS.
+  </view>
+</view>

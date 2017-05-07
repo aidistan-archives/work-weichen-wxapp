@@ -1,0 +1,9 @@
+.action-bar {
+  padding: 0 10rpx;
+}
+
+.action-bar image {
+  width: 61rpx;
+  height: 61rpx;
+  margin: 0 10rpx;
+}
